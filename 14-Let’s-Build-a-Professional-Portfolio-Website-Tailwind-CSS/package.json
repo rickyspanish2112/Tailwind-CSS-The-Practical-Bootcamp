@@ -8,10 +8,10 @@
   },
   "author": "Muslim Helalee",
   "license": "MIT",
-  "description": "",
+  "description": "This is a professional project that focuses on building a portfolio website using Tailwind CSS.",
   "devDependencies": {
     "@tailwindcss/cli": "^4.0.6",
     "autoprefixer": "^10.4.20",
-    "tailwindcss": "^4.0.0"
+    "tailwindcss": "^4.1.4"
   }
 }
