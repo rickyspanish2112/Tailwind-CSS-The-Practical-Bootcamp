@@ -85,7 +85,19 @@
           </div>
         </div>
 
-        <figure class="">
+        <figure
+          class="lg:max-w-[550px] 
+          lg:relative
+          lg:before:absolute
+          lg:before:content-['']
+          lg:before:border-[20px] 
+          lg:before:border-accent 
+          lg:before:h-96
+          lg:before:w-96
+          lg:before:-top-12
+          lg:before:-left-12
+          lg:before:-z-10 lg:z-10"
+        >
           <img src="images/showcase.jpg" alt="" />
         </figure>
       </section>
@@ -93,12 +105,19 @@
 
     <main>
       <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Motto -->
-      <section>
-        <div>
+      <section class="p-6 bg-secondary text-text md:p-16 2xl:rounded">
+        <div class="p-2 flex flex-col gap-y-5 
+        lg:w-3/4 lg:mx-auto 
+        lg:relative after 
+        lg:after:h-2 
+        lg:after:w-16 
+        lg:after:-bottom-6 
+        lg:after:left-2/4 
+        lg:after:-translate-x-2/4">
           <blockquote
             cite="https://www.azquotes.com/author/8044-Martin_Luther_King_Jr/tag/brother"
           >
-            <p>
+            <p class="before:content-['\201C'] after:content-['\201D'] text-xl text-center lg:text-2xl">
               We've learned to fly the air like birds, we've learned to swim the
               seas like fish, and yet we haven't learned to walk the earth as
               brothers and sisters.
@@ -109,12 +128,20 @@
       </section>
 
       <!-- *-*-*-*-*-*-*-*-*-*-*-*-* About me -->
-      <section>
-        <div>
-          <div>
+      <section class="p-6 flex flex-col gap-10 bg-primary text-text relative md:p-16 lg:flex-row *:basis-full">
+        <div class="space-y-5 xl:self-center">
+          <div class="space-y-8 *:space-y-2 lg:relative after lg:after:h-5 lg:after:w-3/4 lg:after:bottom-0 lg:pb-12">
             <div>
-              <h6>About me</h6>
-              <h2>Professional Photographer</h2>
+              <h6 class="text-sm pl-6 
+              uppercase relative 
+              before before:h-1 
+              before:w-4 
+              before:bg-accent 
+              before:top-2/4 
+              before:-translate-y-2/4 
+              before:left-0 
+              lg:text-lg">About me</h6>
+              < h2 class="text-2xl capitalize font-bold lg:text-3xl">Professional Photographer</>
             </div>
 
             <div>
@@ -132,61 +159,103 @@
             </div>
           </div>
 
-          <div>
-            <h3>My Awards</h3>
+          <div >
+            <h3 class="text-lg text-accent font-semibold lg:text-xl">My Awards</h3>
 
-            <ul>
-              <li>
-                <i class="fa-solid fa-angles-right"></i>
+            <ul class="space-y-1">
+              <li class="space-x-2">
+                <i class="fa-solid fa-angles-right  text-accent"></i>
                 <span>Award 1</span>
               </li>
-              <li>
-                <i class="fa-solid fa-angles-right"></i>
+              <li class="space-x-2">
+                <i class="fa-solid fa-angles-right  text-accent"></i>
                 <span>Award 2</span>
               </li>
-              <li>
-                <i class="fa-solid fa-angles-right"></i>
+              <li class="space-x-2">
+                <i class="fa-solid fa-angles-right  text-accent"></i>
                 <span>Award 3</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <figure>
+        <figure class="lg:max-w-[550px] ">
           <img src="images/about.jpg" alt="" />
         </figure>
       </section>
 
       <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Gallery -->
-      <section>
-        <figure>
+      <section class="p-6 bg-secondary grid md:p-16 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-4 lg:grid-row-2">
+         <figure class="md:col-span-2 md:row-span-1 lg:col-span-2 lg:row-span-2 
+         relative after after:w-full after:h-full after:z-10 after:top-0 after:left-0  
+         after:bg-accent/60 after:rounded-sm after:backdrop-blur-xs after:scale-x-0 
+         after:transition hover:after:scale-x-100 after:origin-left 
+         hover:after:origin-right group">
           <img src="images/gallery-1.jpg" alt="" />
-          <figcaption>Gallery Image</figcaption>
+          <figcaption class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 origin-left 
+          group-hover:origin-right 
+          text-text transition z-11 scale-x-0 
+          group-hover:scale-x-100 
+          lg:font-bold xl:text-xl">Gallery Image</figcaption>
+        </figure>
         </figure>
 
-        <figure>
+        <figure class="relative after after:w-full after:h-full after:z-10 after:top-0 after:left-0 
+        after:bg-accent/60 after:rounded-sm after:backdrop-blur-xs after:scale-x-0 
+        after:transition hover:after:scale-x-100 after:origin-left 
+        hover:after:origin-right group">
           <img src="images/gallery-2.jpg" alt="" />
-          <figcaption>Gallery Image</figcaption>
+          <figcaption class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 origin-left 
+          group-hover:origin-right 
+          text-text transition z-11 scale-x-0 
+          group-hover:scale-x-100 
+          lg:font-bold xl:text-xl">Gallery Image</figcaption>
+        </figure>
         </figure>
 
-        <figure>
+        <figure class="relative after after:w-full after:h-full after:z-10 after:top-0 after:left-0 
+        after:bg-accent/60 after:rounded-sm after:backdrop-blur-xs after:scale-x-0 
+        after:transition hover:after:scale-x-100 after:origin-left 
+        hover:after:origin-right group">
           <img src="images/gallery-3.jpg" alt="" />
-          <figcaption>Gallery Image</figcaption>
+          <figcaption class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 origin-left 
+          group-hover:origin-right 
+          text-text transition z-11 scale-x-0 
+          group-hover:scale-x-100 
+          lg:font-bold xl:text-xl">Gallery Image</figcaption>
+        </figure>
         </figure>
 
-        <figure>
+        <figure class="relative after after:w-full after:h-full after:z-10 after:top-0 after:left-0 
+        after:bg-accent/60 after:rounded-sm after:backdrop-blur-xs after:scale-x-0 
+        after:transition hover:after:scale-x-100 after:origin-left 
+        hover:after:origin-right group">
           <img src="images/gallery-4.jpg" alt="" />
-          <figcaption>Gallery Image</figcaption>
+          <figcaption class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 origin-left 
+          group-hover:origin-right 
+          text-text transition z-11 scale-x-0 
+          group-hover:scale-x-100 
+          lg:font-bold xl:text-xl">Gallery Image</figcaption>
         </figure>
 
-        <figure>
+        <figure class="relative after after:w-full after:h-full after:z-10 after:top-0 after:left-0
+        after:bg-accent/60 after:rounded-sm after:backdrop-blur-xs after:scale-x-0 
+         after:transition hover:after:scale-x-100 after:origin-left 
+         hover:after:origin-right group">
           <img src="images/gallery-5.jpg" alt="" />
-          <figcaption>Gallery Image</figcaption>
+          <figcaption class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 origin-left 
+          group-hover:origin-right 
+          text-text transition z-11 scale-x-0 
+          group-hover:scale-x-100 
+          lg:font-bold xl:text-xl">Gallery Image</figcaption>
+        </figure>
         </figure>
       </section>
 
       <!-- *-*-*-*-*-*-*-*-*-*-*-*-* Skills -->
-      <section>
+      <section class="p-6 flex flex-col gap-y-10 bg-primary 
+      text-text md:p-16 lg:gap-x-10 
+      lg:flex-row-reverse">
         <div>
           <div>
             <h6>My Skills</h6>
